@@ -102,7 +102,7 @@
         <div class="input-group">
             <label for="startDate">Enter Today's Date:</label>
             <input type="date" id="startDate" required>
-            <div class="date-format">Format: MM/DD/YYYY</div>
+            <div class="date-format">Format: DD/MM/YYYY</div>
         </div>
         
         <button id="calculateBtn">Calculate Future Visits</button>
@@ -177,13 +177,13 @@
                 return resultDate;
             }
             
-            // Helper function to format date as MM/DD/YYYY
+            // Helper function to format date as DD/MM/YYYY
             function formatDate(date) {
                 const month = date.getMonth() + 1;
                 const day = date.getDate();
                 const year = date.getFullYear();
                 
-                return `${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')}/${year}`;
+                return `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`;
             }
         });
     </script>
